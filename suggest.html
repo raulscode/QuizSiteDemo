@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IT Basics Quiz Site - Suggest a Quiz Question</title>
+        <meta charaset="UTF-8">
+        <meta description="Suggestion form for IT-related quiz questions">
+        <meta viewport="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <style>
+            footer {
+                font-weight: bold;
+            }
+            #confirmSuggest {
+                padding-top: 10px;
+            }
+        </style>
+
+    </head>
+<body>
+    <header>
+        <img src="chipImage.svg"  id="mainPic">
+        <h1>IT Basics Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">IT Quiz (Home)</a> <font color="azure">|</font> </li>
+                <li><a href="suggest.html">Suggest A Question</a> <font color="azure">|</font> </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <form id="suggestForm" method="post" action="">
+        <div>
+        <section aria-labelledby="suggest">
+            <h2 id="suggest">Suggest a Question</h2>
+            <div>
+                <p>Do you have an idea? Input a possible question and answer to add to the quiz!</p>
+                <fieldset id="suggestedQuestion">
+                    <label for="suggestQ">Question: </label>
+                    <textarea class="blockText" id="suggestQ" required></textarea>
+                    <label for="suggestA">Answer: </label>
+                    <textarea class="blockText" id="suggestA" required></textarea>
+                </fieldset>
+                <fieldset id="email">
+                    <label for="emailBox">Put your email below if you want to be credited: </label>
+                    <input type="email" id="emailBox">
+                </fieldset>
+            </div>
+    
+        </section>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <div id="confirmSuggest"></div>
+    </main>
+
+    <script src="SuggestScript.js"></script>
+
+</body>
+
+<footer>
+    
+    <p>Copyright Raul's Imagination 2023</p>
+    <p>Special thanks to Per Scholas and freeCodeCamp.ORG for all the sweet tutorials.</p>
+    
+</footer>
+
+</html>
+

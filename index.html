@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>IT Basics Quiz Site - Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A quiz site. I dunno.">
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        footer {
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <img src="chipImage.svg"  id="mainPic">
+        <h1>IT Basics Quiz</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">IT Quiz (Home)</a> <font color="azure">|</font> </li>
+                <li><a href="suggest.html">Suggest A Question</a> <font color="azure">|</font> </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <form id="ITQuizForm" method="post" action="">
+        <section aria-labelledby="userInfo"><h2 id="userInfo">Your Info</h2>
+        <div class="yourInfo"><label for="name">Name: </label><input id="name" type="text" name="name" placeholder="Your Name" pattern="[A-Za-z]+"></div>
+        <div class="yourInfo"><label for="email">Email: </label><input id="email" type="email" name="email" placeholder="Your Email Address"></div>
+        </section>
+        <section aria-labelledby="ITQuiz"><h2 id="ITQuiz">IT Basics Quiz - Study For the CompTIA A+!</h2>
+            <div class="questionDiv">
+                <p class="qP">1</p>
+                <fieldset class="ITquestion" name="question1">
+                    <legend>What does RAM stand for?</legend>
+                    <ul class="answerDisplay">
+                        <li><label for="q1a1"><input type="radio" id="q1a1" value="A" name="answers1">Repeatedly Allocated Memory</label></li>
+                        <li><label for="q1a2"><input type="radio" id="q1a2" value="B" name="answers1">Regular Assembly Memory</label></li>
+                        <li><label for="q1a3"><input type="radio" id="q1a3" value="C" name="answers1">Random Access Memory</label></li>
+                        <li><label for="q1a4"><input type="radio" id="q1a4" value="D" name="answers1">Raul's Amazing Memory</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="questionDiv">
+                <p class="qP">2</p>
+                <fieldset class="ITquestion" name="question2">
+                    <legend>RAM is also known more generally as primary memory. True or False?</legend>
+                    <ul class="answerDisplay">
+                        <li><label for="q2a1"><input type="radio" id="q2a1" value="True" name="answers2">True</label></li>
+                        <li><label for="q2a2"><input type="radio" id="q2a2" value="False" name="answers2">False</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="questionDiv">
+                <p class="qP">3</p>
+                <fieldset class="ITquestion" name="question3">
+                    <legend>An example of secondary memory can include: </legend>
+                    <ul class="answerDisplay">
+                        <li><label for="q3a1"><input type="radio" id="q3a1" value="A" name="answers3">A hard drive</label></li>
+                        <li><label for="q3a2"><input type="radio" id="q3a2" value="B" name="answers3">An SSD drive</label></li>
+                        <li><label for="q3a3"><input type="radio" id="q3a3" value="C" name="answers3">A magnetic tape if you're a time traveler from 1979</label></li>
+                        <li><label for="q3a4"><input type="radio" id="q3a4" value="D" name="answers3">All of the above</label></li>
+                    </ul>
+                </fieldset>
+            </div>
+        </section>
+        <section aria-labelledby="survey">
+            <h2 id="survey">Brief Survey</h2>
+            <div class="bottomSurvery">
+                <div class="questionDiv">
+                    <label for="survey1">How long have you been working in IT?</label>
+                </div>
+                <div class="dropdown1">
+                    <select id="survey1" name="surveyQ" required>
+                        <option value="">SELECT</option>
+                        <option value="Less than a year">Less than a year</option>
+                        <option value="More than a year">More than a year</option>
+                        <option value="A few years, but less than 5">A few years, but less than 5</option>
+                        <option value="Five or more year">Five or more years</option>
+                    </select>
+                </div>
+                <div class="questionDiv">
+                    <label for="survey2">What kind of IT work would you like to do most?</label>
+                </div>
+                <div class="dropdown2">
+                    <select id="survey2" name="surveyQ" required>
+                        <option value="">SELECT</option>
+                        <option value="help desk">Help desk! I love nothing more than helping people find where the "send" button is.</option>
+                        <option value="data center">Data center stuff. That way I don't have to talk to anyone very often.</option>
+                        <option value="scripting">Scripting. That way I NEVER have to talk to anyone.</option>
+                        <option value="cybersecurity">Cybersecurity because I love pain and suffering.</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="questionDiv">
+                    <label for="survey3">What motivated you to get into IT?</label>
+                </div>
+                <div class="dropdown1">
+                    <select id="survey3" name="surveyQ" required>
+                        <option value="">SELECT</option>
+                        <option value="love computers">I love computers.</option>
+                        <option value="love challenges">I love working on challenging problems.</option>
+                        <option value="love money">I love money.</option>
+                        <option value="all of the above">All of the above reasons. But mostly money.</option>
+                        <option value="other">Other.</option>
+                    </select>
+                </div>
+            </div>
+
+        </section>
+        <input type="submit" value="Submit">
+    </form>
+    <div><h2>Your Quiz Results: </h2></div>
+    <div id="results"></div>
+    <div id="userAnswers"></div>
+    <p>Question 1: </p><div id="userAnswer1"></div>
+    <p>Question 2: </p><div id="userAnswer2"></div>
+    <p>Question 3: </p><div id="userAnswer3"></div>
+    </main>
+    <script src="MainScript.js"></script>
+</body>
+
+<footer>
+    
+    <p>Copyright Raul's Imagination 2023</p>
+    <p>Special thanks to Per Scholas and freeCodeCamp.ORG for all the sweet tutorials.</p>
+
+</footer>
+
+</html>

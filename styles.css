@@ -1,0 +1,125 @@
+body {
+    background: #FFFFFF;
+    color: #328da8;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+#mainPic {
+    width: max(100px, 15vw);
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: #328da8;
+    display: flex;
+}
+
+main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    width: 80%;
+    margin: auto;
+}
+
+footer {
+
+    font-size: 10px;
+    margin: auto;
+    width: 80%;
+
+}
+
+h1 {
+    color: azure;
+    font-size: min(5vw);
+    text-align: center;
+    
+}
+
+h2 {
+
+    padding-top: 10px;
+}
+
+nav > ul {
+    justify-content: space-evenly;
+    display: flex;
+    list-style: none;
+    height: 100%;
+    flex-wrap: wrap; /*Just in case; have no idea how it looks on mobile*/
+    
+}
+
+nav > ul > li {
+    margin-right: 10px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+}
+
+a {
+    color:azure;
+}
+
+a:visited {
+    color:azure;
+}
+
+a:hover {
+    color:#328da8;
+    background-color:#FFFFFF;
+
+}
+
+.answerDisplay {
+    list-style-type: upper-alpha;
+}
+
+.qP::before {
+
+    content: "Question ";
+}
+
+.blockText {
+    display: block;
+}
+
+#emailBox {
+    display: block;
+}
+
+section {
+
+    max-width: 2000px; /*Again, just in case an extra stretchy screen*/
+}
+
+.yourInfo label {
+
+    min-width: 50px;
+    width: 5%;
+    text-align: left;
+
+
+}
+
+.yourInfo input {
+    width: 30%;
+    text-align: left;
+}
+
+.yourInfo label, .youInfo input {
+    display: inline-block;
+}
+
+.tableDiv a {
+
+    color: #328da8;
+
+}
+
+table, th, td {
+    border: 1px solid black;
+}
