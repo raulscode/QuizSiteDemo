@@ -1,4 +1,4 @@
-Raul Betancourt's IT Quiz Site
+Raul's IT Quiz Demo Site
 My GitHub Account: (github.com/raulscode)
 
 This site is a small demo of a quiz site.
